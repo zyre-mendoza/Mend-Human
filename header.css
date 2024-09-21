@@ -10,9 +10,56 @@
     display: flex;
     align-items: center;
     color: white !important;
-    font-size: 1.2rem;
     font-weight: 600;
-    font-size: 32px;
+}
+.nav-links{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-trophy{
+    
+}
+.nav-links button{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-links i{
+    color: #6A6F73;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.share-button{
+    background: linear-gradient(0deg, #ED8E1C, #FDBB39);
+    border-radius: 34px;
+    padding: 10px 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-button p{
+    margin-left: 10px;
+}
+
+.share-button i{
+    padding: 10px;
+    background-color: white;
+    transform: rotate(-30deg);
+    border-radius: 100%;
+    font-size: 14px;
+    color: #FDBB39;
+    margin-left: 16px;
+}
+.navbar-brand h1{
+    font-size: clamp(20px, 2vw, 32px)
 }
 .navbar-brand img {
     margin-right: 10px;
@@ -27,4 +74,40 @@
 .btn-warning {
     background-color: #ffa000;
     border-color: #ffa000;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand h1{
+        display: none;
+    }
+    .navbar-brand img {
+        width: 35px; /* Adjust logo size for mobile */
+        height: 35px;
+    }
+    .navbar .btn {
+        margin-left: 5px;
+        font-size: 0.85rem;
+    }
+    
+    .nav-links{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around !important;
+        text-align: start !important;
+        justify-content: flex-start;
+    }
+    
+    .quick-links h2{
+        margin-bottom: 10px;
+
+    }
 }
